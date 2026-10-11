@@ -1,471 +1,281 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Black MuayThai Gym</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
-<link rel="shortcut icon" href="img/logo.jpg" type="image/x-icon">    
-<meta name="description" content="Aulas de Muay Thai em Dracena para todos os níveis. Treino coletivo e personal. Agende sua aula experimental gratuita na Black MuayThai Gym.">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Black Muay Thai | Trend Edition</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Anton (massive headers), Space Mono (tags), Inter (body) -->
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Lenis CSS for smooth scroll -->
+  <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.13/dist/lenis.css">
+  
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <!-- Custom Cursor -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
 
-<div class="cursor" id="cursor"></div>
-<div class="cursor-ring" id="cursorRing"></div>
+  <!-- FLOATING PILL NAV (Trend Dynamic Island Style) -->
+  <nav class="pill-nav">
+    <div class="pill-brand">BLACK</div>
+    <ul class="pill-links">
+      <li><a href="#hero">Início</a></li>
+      <li><a href="#bento">O QG</a></li>
+      <li><a href="#plans">Planos</a></li>
+    </ul>
+    <a href="https://wa.me/5518999999999" class="pill-cta magnetic" target="_blank">Treinar</a>
+  </nav>
 
-<!-- NAV -->
-<nav>
-  <div class="nav-logo"><a href="#inicio"><img src="./img/logo.jpg" alt="Black MuayThai Gym" style="height:53px;width:auto;display:block;"></a></div>
-  
-  <div class="hamburger" id="hamburger">
-    <span class="bar"></span>
-    <span class="bar"></span>
-    <span class="bar"></span>
-  </div>
-
-  <ul class="nav-links" id="nav-links">
-    <li><a href="#horarios">Horários</a></li>
-    <li><a href="#planos">Planos</a></li>
-    <li><a href="#professores">Professores</a></li>
-    <li><a href="#contato" class="nav-cta">Contato</a></li>
-  </ul>
-</nav>
-
-<!-- HERO -->
-<section class="hero" id="inicio">
-  <div class="hero-grid-bg"></div>
-  <div class="hero-accent"></div>
-  <div class="hero-left reveal">
-    <div class="hero-eyebrow">Academia de Muay Thai</div>
-    <h1>
-      ARTE<br>
-      <span class="line-green">MARCIAL</span><br>
-      DE VERDADE
-    </h1>
-    <p class="hero-desc">
-      Treinamento autentico de Muay Thai para todos os niveis. Do iniciante ao competidor — saia mais forte, mais focado e mais confiante.
-    </p>
-    <div class="hero-btns">
-      <a href="#planos" class="btn-green">Ver Planos</a>
-      <a href="#horarios" class="btn-outline">Horários</a>
-    </div>
-  </div>
-  <div class="hero-right reveal">
-    <div class="hero-stat-row">
-      <div class="hero-stat">
-        <div class="num">12+</div>
-        <div class="label">Anos de experiência</div>
+  <!-- HERO SECTION -->
+  <header id="hero" class="hero-section">
+    <!-- Grid Overlay (Noise/Grit) -->
+    <div class="noise-overlay"></div>
+    
+    <!-- Infinite Marquee Background -->
+    <div class="marquee-bg">
+      <div class="marquee-track">
+        <span>BLACK MUAY THAI ACADEMIA DRACENA BLACK MUAY THAI ACADEMIA DRACENA </span>
+        <span>BLACK MUAY THAI ACADEMIA DRACENA BLACK MUAY THAI ACADEMIA DRACENA </span>
       </div>
-      <div class="hero-stat">
-        <div class="num">300+</div>
-        <div class="label">Alunos formados</div>
+      <div class="marquee-track reverse">
+        <span>DEFENSE FOR ALL DEFENSE FOR ALL DEFENSE FOR ALL DEFENSE FOR ALL </span>
+        <span>DEFENSE FOR ALL DEFENSE FOR ALL DEFENSE FOR ALL DEFENSE FOR ALL </span>
       </div>
-    </div>
-    <div class="hero-stat-row" style="margin-top:1px;">
-      <div class="hero-stat">
-        <div class="num">2</div>
-        <div class="label">Professores graduados</div>
+      <div class="marquee-track">
+        <span>ARTE MARCIAL DE VERDADE ARTE MARCIAL DE VERDADE ARTE MARCIAL DE VERDADE </span>
+        <span>ARTE MARCIAL DE VERDADE ARTE MARCIAL DE VERDADE ARTE MARCIAL DE VERDADE </span>
       </div>
-      <div class="hero-stat">
-        <div class="num">∞</div>
-        <div class="label">Motivação garantida</div>
-      </div>
-    </div>
-    <div class="hero-callout">
-      <span style="font-size:1.2rem;">🥊</span>
-      <span style="font-family:'DM Mono',monospace;font-size:0.75rem;letter-spacing:0.1em;">Aula experimental gratuita — fale conosco</span>
-    </div>
-  </div>
-</section>
-
-<!-- HORÁRIOS -->
-<section id="horarios">
-  <div class="sec-tag">Programação</div>
-  <h2 class="sec-title">Horários de Treino</h2>
-  <div class="schedule-wrap reveal">
-    <!-- Coletivo -->
-    <div class="schedule-block">
-      <div class="schedule-header">
-        <div class="sh-icon"></div>
-        <span class="sh-title">Treino Coletivo</span>
-      </div>
-      <div class="schedule-days">
-        <div class="schedule-day-row">
-          <div class="sdr-day">Segunda</div>
-          <div class="sdr-info">
-            <div class="sdr-time">19:10 – 20:30</div>
-            <div class="sdr-label">Muay Thai — turma geral</div>
-          </div>
-          <span class="sdr-badge badge-coletivo">Coletivo</span>
-        </div>
-        <div class="schedule-day-row">
-          <div class="sdr-day">Terça</div>
-          <div class="sdr-info">
-            <div class="sdr-time">19:10 – 20:30</div>
-            <div class="sdr-label">Muay Thai — turma geral</div>
-          </div>
-          <span class="sdr-badge badge-coletivo">Coletivo</span>
-        </div>
-        <div class="schedule-day-row">
-          <div class="sdr-day">Quinta</div>
-          <div class="sdr-info">
-            <div class="sdr-time">19:10 – 20:30</div>
-            <div class="sdr-label">Muay Thai — turma geral</div>
-          </div>
-          <span class="sdr-badge badge-coletivo">Coletivo</span>
-        </div>
-      </div>
-      <div class="schedule-note">Todos treinam juntos independente do nível. Bem-vindos iniciantes e experientes!</div>
-    </div>
-    <!-- Particular -->
-    <div class="schedule-block">
-      <div class="schedule-header">
-        <div class="sh-icon" style="background:var(--white-dim)"></div>
-        <span class="sh-title">Aulas Particulares</span>
-      </div>
-      <div class="schedule-days">
-        <div class="schedule-day-row">
-          <div class="sdr-day" style="width:auto;padding:1rem 1.25rem;min-width:80px;">Horário</div>
-          <div class="sdr-info">
-            <div class="sdr-time" style="font-size:1rem;">A combinar</div>
-            <div class="sdr-label">Agendado diretamente com o professor</div>
-          </div>
-          <span class="sdr-badge badge-particular">Particular</span>
-        </div>
-        <div class="schedule-day-row">
-          <div class="sdr-day" style="width:auto;padding:1rem 2rem;min-width:80px;">Dias</div>
-          <div class="sdr-info">
-            <div class="sdr-time" style="font-size:1rem;">1, 2 ou até 5× / semana</div>
-            <div class="sdr-label">Foco total no seu desenvolvimento</div>
-          </div>
-          <span class="sdr-badge badge-particular">Flexível</span>
-        </div>
-        <div class="schedule-day-row">
-          <div class="sdr-day" style="width:auto;padding:1rem 1.8rem;min-width:80px;">Local</div>
-          <div class="sdr-info">
-            <div class="sdr-time" style="font-size:1rem;">Na academia</div>
-            <div class="sdr-label">Estrutura completa disponível</div>
-          </div>
-          <span class="sdr-badge badge-particular">Presencial</span>
-        </div>
-      </div>
-      <div class="schedule-note">Ideal para quem busca evolução acelerada, correção técnica e atenção individualizada.</div>
-    </div>
-  </div>
-</section>
-
-<!-- PLANOS -->
-<!-- PLANOS -->
-<section id="planos">
-  <div class="sec-tag">Investimento</div>
-  <h2 class="sec-title">Planos & Valores</h2>
-
-  <!-- MENSAGEM DE INTRODUÇÃO -->
-  <div class="reveal" style="margin-top: -1.5rem; margin-bottom: 3rem; max-width: 600px;">
-    <p style="color: var(--white-dim); font-size: 1.05rem; line-height: 1.6;">
-      Pensando na sua evolução e constância nos treinos, agora temos planos com desconto especial 👊🔥
-    </p>
-  </div>
-
-  <!-- COLETIVO -->
-  <div class="plans-section reveal">
-    <div class="plans-type-label"><span></span>Treino Coletivo</div>
-    <div class="plans-grid" style="grid-template-columns: 1fr; max-width: 380px;">
-      <div class="plan-card featured">
-        <div class="plan-popular">Mais procurado</div>
-        <div class="plan-name">Plano Coletivo</div>
-        <div class="plan-price">
-          <span class="cur">R$</span>
-          <span class="val">145</span>
-          <span class="per">/mês</span>
-        </div>
-        <p class="plan-sub">3 aulas por semana — segunda, terça e quinta às 19h10. Turma unificada, ambiente motivador.</p>
-        <ul class="plan-features">
-          <li><span class="fi">▶</span>Segunda, Terça e Quinta</li>
-          <li><span class="fi">▶</span>19:10 às 20:30 (1h20 de treino)</li>
-          <li><span class="fi">▶</span>Todos os níveis juntos</li>
-          <li><span class="fi">▶</span>Avaliação inicial gratuita</li>
-          <li><span class="fi">▶</span>Acesso à estrutura completa da academia</li>
-        </ul>
-        
-        <!-- TABELA DE DESCONTOS -->
-        <div style="background: rgba(244,244,240,0.03); border: 1px solid var(--border); padding: 1rem; border-radius: 4px; margin-bottom: 1.5rem;">
-          <div style="display:flex; justify-content:space-between; margin-bottom:8px; font-size:0.85rem;"><span style="color:var(--white-dim)">Mensal</span><span style="color:var(--white)">R$ 145,00</span></div>
-          <div style="display:flex; justify-content:space-between; margin-bottom:8px; font-size:0.85rem;"><span style="color:var(--white-dim)">Trimestral <span style="color:var(--green);font-size:0.7rem;margin-left:4px;">2% OFF</span></span><span style="color:var(--white)">R$ 426,30</span></div>
-          <div style="display:flex; justify-content:space-between; margin-bottom:8px; font-size:0.85rem;"><span style="color:var(--white-dim)">Semestral <span style="color:var(--green);font-size:0.7rem;margin-left:4px;">5% OFF</span></span><span style="color:var(--white)">R$ 826,50</span></div>
-          <div style="display:flex; justify-content:space-between; font-size:0.85rem;"><span style="color:var(--white-dim)">Anual <span style="color:var(--green);font-size:0.7rem;margin-left:4px;">10% OFF</span></span><span style="color:var(--green);font-weight:bold;">R$ 1.566,00</span></div>
-        </div>
-
-        <a href="#contato" class="plan-btn plan-btn-solid">Quero Me Matricular</a>
-      </div>
-    </div>
-  </div>
-
-  <!-- PARTICULAR -->
-  <div class="plans-section reveal">
-    <div class="plans-type-label"><span style="background:var(--white-dim)"></span>Aulas Particulares (Personal)</div>
-    <div class="plans-grid">
-      
-      <!-- 1x semana -->
-      <div class="plan-card">
-        <div class="plan-name">1× por semana</div>
-        <div class="plan-price">
-          <span class="cur">R$</span>
-          <span class="val">230</span>
-          <span class="per">/mês</span>
-        </div>
-        <p class="plan-sub">4 aulas mensais com atenção 100% dedicada ao seu progresso.</p>
-         <ul class="plan-features">
-          <li><span class="fi">▶</span>1 aula/semana (4 por mês)</li>
-          <li><span class="fi">▶</span>Horário flexível a combinar</li>
-          <li><span class="fi">▶</span>Foco em técnica e fundamentos</li>
-          <li><span class="fi">▶</span>Ideal para quem tem agenda restrita</li>
-        </ul>
-        <div style="background: rgba(244,244,240,0.03); border: 1px solid var(--border); padding: 1rem; border-radius: 4px; margin-bottom: 1.5rem;">
-          <div style="display:flex; justify-content:space-between; margin-bottom:8px; font-size:0.85rem;"><span style="color:var(--white-dim)">Mensal</span><span style="color:var(--white)">R$ 230,00</span></div>
-          <div style="display:flex; justify-content:space-between; margin-bottom:8px; font-size:0.85rem;"><span style="color:var(--white-dim)">Trimestral <span style="color:var(--green);font-size:0.7rem;margin-left:4px;">2% OFF</span></span><span style="color:var(--white)">R$ 676,20</span></div>
-          <div style="display:flex; justify-content:space-between; margin-bottom:8px; font-size:0.85rem;"><span style="color:var(--white-dim)">Semestral <span style="color:var(--green);font-size:0.7rem;margin-left:4px;">5% OFF</span></span><span style="color:var(--white)">R$ 1.311,00</span></div>
-          <div style="display:flex; justify-content:space-between; font-size:0.85rem;"><span style="color:var(--white-dim)">Anual <span style="color:var(--green);font-size:0.7rem;margin-left:4px;">10% OFF</span></span><span style="color:var(--green);font-weight:bold;">R$ 2.484,00</span></div>
-        </div>
-
-        <a href="#contato" class="plan-btn plan-btn-line">Tenho Interesse</a>
-      </div>
-
-      <!-- 2x semana -->
-      <div class="plan-card">
-        <div class="plan-name">2× por semana</div>
-        <div class="plan-price">
-          <span class="cur">R$</span>
-          <span class="val">370</span>
-          <span class="per">/mês</span>
-        </div>
-        <p class="plan-sub">8 aulas mensais para evolução consistente e resultado mais rápido.</p>
-        <ul class="plan-features">
-          <li><span class="fi">▶</span>2 aulas/semana (8 por mês)</li>
-          <li><span class="fi">▶</span>Horário flexível a combinar</li>
-          <li><span class="fi">▶</span>Técnica + condicionamento físico</li>
-          <li><span class="fi">▶</span>Avaliação mensal de evolução</li>
-        </ul>        
-        <div style="background: rgba(244,244,240,0.03); border: 1px solid var(--border); padding: 1rem; border-radius: 4px; margin-bottom: 1.5rem;">
-          <div style="display:flex; justify-content:space-between; margin-bottom:8px; font-size:0.85rem;"><span style="color:var(--white-dim)">Mensal</span><span style="color:var(--white)">R$ 370,00</span></div>
-          <div style="display:flex; justify-content:space-between; margin-bottom:8px; font-size:0.85rem;"><span style="color:var(--white-dim)">Trimestral <span style="color:var(--green);font-size:0.7rem;margin-left:4px;">2% OFF</span></span><span style="color:var(--white)">R$ 1.087,80</span></div>
-          <div style="display:flex; justify-content:space-between; margin-bottom:8px; font-size:0.85rem;"><span style="color:var(--white-dim)">Semestral <span style="color:var(--green);font-size:0.7rem;margin-left:4px;">5% OFF</span></span><span style="color:var(--white)">R$ 2.109,00</span></div>
-          <div style="display:flex; justify-content:space-between; font-size:0.85rem;"><span style="color:var(--white-dim)">Anual <span style="color:var(--green);font-size:0.7rem;margin-left:4px;">10% OFF</span></span><span style="color:var(--green);font-weight:bold;">R$ 3.996,00</span></div>
-        </div>
-
-        <a href="#contato" class="plan-btn plan-btn-line">Tenho Interesse</a>
-      </div>
-
-      <!-- 3x semana -->
-      <div class="plan-card featured">
-        <div class="plan-popular">Mais popular</div>
-        <div class="plan-name">3× por semana</div>
-        <div class="plan-price">
-          <span class="cur">R$</span>
-          <span class="val">490</span>
-          <span class="per">/mês</span>
-        </div>
-        <p class="plan-sub">12 aulas mensais para quem quer evolução acelerada ou foco competitivo.</p>
-        <ul class="plan-features">
-          <li><span class="fi">▶</span>3 aulas/semana (12 por mês)</li>
-          <li><span class="fi">▶</span>Horário flexível a combinar</li>
-          <li><span class="fi">▶</span>Planejamento personalizado</li>
-          <li><span class="fi">▶</span>Ideal para competição</li>
-        </ul>        
-        
-        <div style="background: rgba(244,244,240,0.03); border: 1px solid var(--border); padding: 1rem; border-radius: 4px; margin-bottom: 1.5rem;">
-          <div style="display:flex; justify-content:space-between; margin-bottom:8px; font-size:0.85rem;"><span style="color:var(--white-dim)">Mensal</span><span style="color:var(--white)">R$ 490,00</span></div>
-          <div style="display:flex; justify-content:space-between; margin-bottom:8px; font-size:0.85rem;"><span style="color:var(--white-dim)">Trimestral <span style="color:var(--green);font-size:0.7rem;margin-left:4px;">2% OFF</span></span><span style="color:var(--white)">R$ 1.440,60</span></div>
-          <div style="display:flex; justify-content:space-between; margin-bottom:8px; font-size:0.85rem;"><span style="color:var(--white-dim)">Semestral <span style="color:var(--green);font-size:0.7rem;margin-left:4px;">5% OFF</span></span><span style="color:var(--white)">R$ 2.793,00</span></div>
-          <div style="display:flex; justify-content:space-between; font-size:0.85rem;"><span style="color:var(--white-dim)">Anual <span style="color:var(--green);font-size:0.7rem;margin-left:4px;">10% OFF</span></span><span style="color:var(--green);font-weight:bold;">R$ 5.292,00</span></div>
-        </div>
-
-        <a href="#contato" class="plan-btn plan-btn-solid">Quero este plano</a>
-      </div>
-      
-      <!-- 4x semana -->
-      <div class="plan-card">
-        <div class="plan-name">4× por semana</div>
-        <div class="plan-price">
-          <span class="cur">R$</span>
-          <span class="val">610</span>
-          <span class="per">/mês</span>
-        </div>
-        <p class="plan-sub">16 aulas mensais para resultados extremos e alta performance.</p>
-        <ul class="plan-features">
-          <li><span class="fi">▶</span>4 aulas/semana (16 por mês)</li>
-          <li><span class="fi">▶</span>Horário flexível a combinar</li>
-          <li><span class="fi">▶</span>Treinos intensos e técnicos</li>
-          <li><span class="fi">▶</span>Ideal para quem busca treinos intensos</li>
-        </ul>        
-        <div style="background: rgba(244,244,240,0.03); border: 1px solid var(--border); padding: 1rem; border-radius: 4px; margin-bottom: 1.5rem;">
-          <div style="display:flex; justify-content:space-between; margin-bottom:8px; font-size:0.85rem;"><span style="color:var(--white-dim)">Mensal</span><span style="color:var(--white)">R$ 610,00</span></div>
-          <div style="display:flex; justify-content:space-between; margin-bottom:8px; font-size:0.85rem;"><span style="color:var(--white-dim)">Trimestral <span style="color:var(--green);font-size:0.7rem;margin-left:4px;">2% OFF</span></span><span style="color:var(--white)">R$ 1.793,40</span></div>
-          <div style="display:flex; justify-content:space-between; margin-bottom:8px; font-size:0.85rem;"><span style="color:var(--white-dim)">Semestral <span style="color:var(--green);font-size:0.7rem;margin-left:4px;">5% OFF</span></span><span style="color:var(--white)">R$ 3.477,00</span></div>
-          <div style="display:flex; justify-content:space-between; font-size:0.85rem;"><span style="color:var(--white-dim)">Anual <span style="color:var(--green);font-size:0.7rem;margin-left:4px;">10% OFF</span></span><span style="color:var(--green);font-weight:bold;">R$ 6.588,00</span></div>
-        </div>
-
-        <a href="#contato" class="plan-btn plan-btn-line">Tenho Interesse</a>
-      </div>
-      
-      <!-- 5x semana -->
-      <div class="plan-card">
-        <div class="plan-name">5× por semana</div>
-        <div class="plan-price">
-          <span class="cur">R$</span>
-          <span class="val">730</span>
-          <span class="per">/mês</span>
-        </div>
-        <p class="plan-sub">20 aulas mensais. O pacote definitivo de treinamento intenso.</p>
-        <ul class="plan-features">
-          <li><span class="fi">▶</span>5 aulas/semana (20 por mês)</li>
-          <li><span class="fi">▶</span>Horário flexível a combinar</li>
-          <li><span class="fi">▶</span>Treinos planejados a sua necessidade</li>
-          <li><span class="fi">▶</span>Ideal para treinos fisicos extremos</li>
-        </ul>        
-        <div style="background: rgba(244,244,240,0.03); border: 1px solid var(--border); padding: 1rem; border-radius: 4px; margin-bottom: 1.5rem;">
-          <div style="display:flex; justify-content:space-between; margin-bottom:8px; font-size:0.85rem;"><span style="color:var(--white-dim)">Mensal</span><span style="color:var(--white)">R$ 730,00</span></div>
-          <div style="display:flex; justify-content:space-between; margin-bottom:8px; font-size:0.85rem;"><span style="color:var(--white-dim)">Trimestral <span style="color:var(--green);font-size:0.7rem;margin-left:4px;">2% OFF</span></span><span style="color:var(--white)">R$ 2.146,20</span></div>
-          <div style="display:flex; justify-content:space-between; margin-bottom:8px; font-size:0.85rem;"><span style="color:var(--white-dim)">Semestral <span style="color:var(--green);font-size:0.7rem;margin-left:4px;">5% OFF</span></span><span style="color:var(--white)">R$ 4.161,00</span></div>
-          <div style="display:flex; justify-content:space-between; font-size:0.85rem;"><span style="color:var(--white-dim)">Anual <span style="color:var(--green);font-size:0.7rem;margin-left:4px;">10% OFF</span></span><span style="color:var(--green);font-weight:bold;">R$ 7.884,00</span></div>
-        </div>
-
-        <a href="#contato" class="plan-btn plan-btn-line">Tenho Interesse</a>
-      </div>
-    </div>
-  </div>
-
-  <!-- FECHAMENTO E AVISOS -->
-  <div class="reveal" style="text-align:center; margin-bottom: 2rem;">
-    <p style="color:#0bb831; font-weight:500; font-size: 1.1rem; margin-bottom: 0.5rem;">
-      Quanto maior o plano, maior a economia!
-    </p>
-    <p style="color:var(--white-dim); font-size: 0.95rem;">
-      Qualquer dúvida, estamos à disposição 👊🔥
-    </p>
-  </div>
-
-  <p style="text-align:center;font-family:'DM Mono',monospace;font-size:0.72rem;letter-spacing:0.1em;color:var(--white-dim);margin-top:-1rem;">
-    * Valores sujeitos a ajuste. Entre em contato para condições especiais e pagamento antecipado.
-  </p>
-</section>
-
-<!-- PROFESSORES -->
-<section id="professores">
-  <div class="sec-tag">Equipe</div>
-  <h2 class="sec-title">Nossos Professores</h2>
-  <div class="coaches-grid" style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); max-width: 860px;">
-    <div class="coach-card reveal">
-      <div class="coach-top">
-        <div class="coach-initials">JN</div>
-        <div class="coach-top-bar"></div>
-      </div>
-      <div class="coach-body">
-        <div class="coach-name">Jean</div>
-        <div class="coach-role">Professor · Black MuayThai Gym</div>
-        <p class="coach-bio">Professor da Black MuayThai Gym com foco em condicionamento físico e aperfeiçoamento técnico. Comprometido em oferecer treinos de alta qualidade adaptados a cada aluno.</p>
-        <div class="coach-chips">
-          <span class="chip">Técnica</span>
-          <span class="chip">Coletivo</span>
-          <span class="chip">Particular</span>
-        </div>
-      </div>
-    </div>
-    <div class="coach-card reveal">
-      <div class="coach-top">
-        <div class="coach-initials">TN</div>
-        <div class="coach-top-bar"></div>
-      </div>
-      <div class="coach-body">
-        <div class="coach-name">Taynan</div>
-        <div class="coach-role">Professor · Black MuayThai Gym</div>
-        <p class="coach-bio">Professor da Black MuayThai Gym, responsável pelas aulas coletivas e particulares. Dedicado ao desenvolvimento técnico dos alunos em todos os níveis, do iniciante ao avançado.</p>
-        <div class="coach-chips">
-          <span class="chip">Condicionamento</span>
-          <span class="chip">Coletivo</span>
-          <span class="chip">Particular</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- CONTATO -->
-<section id="contato">
-  <div class="sec-tag">Fale conosco</div>
-  <h2 class="sec-title">Contato</h2>
-  <div class="contact-layout">
-    <div class="reveal">
-      <div class="info-list">
-        <div class="info-row">
-          <div class="info-row-icon">📍</div>
-          <div class="info-row-body">
-            <div class="info-row-label">Endereço</div>
-            <div class="info-row-val">Rua nossa senhora aparecida, 30 — Centro<br>Dracena — SP</div>
-          </div>
-        </div>
-        <div class="info-row">
-          <div class="info-row-icon">⏰</div>
-          <div class="info-row-body">
-            <div class="info-row-label">Funcionamento</div>
-            <div class="info-row-val">Segunda a Sexta: 08:00 – 21:00<br>Sábado: 08:00 – 12:00</div>
-          </div>
-        </div>
-        <div class="info-row">
-          <div class="info-row-icon">📞</div>
-          <div class="info-row-body">
-            <div class="info-row-label">Telefone</div>
-            <div class="info-row-val">(18) 99715-2952</div>
-          </div>
-        </div>
-        <div class="info-row">
-          <div class="info-row-icon">📧</div>
-          <div class="info-row-body">
-            <div class="info-row-label">E-mail</div>
-            <div class="info-row-val">jeanblackthai@gmail.com</div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="wa-card reveal">
-      <div class="wa-ring">💬</div>
-      <h3>WhatsApp</h3>
-      <p>Tire duvidas, saiba mais sobre os planos ou agende uma aula experimental. Nossa equipe responde rapido.</p>
-      <a href="https://wa.me/5518997152952?text=Ola!%20Gostaria%20de%20saber%20mais%20sobre%20os%20planos%20da%20Black%20MuayThai%20Gym." class="btn-wa" target="_blank" rel="noopener">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
-          <path d="M12 0C5.373 0 0 5.373 0 12c0 2.108.552 4.091 1.517 5.815L.057 23.5l5.852-1.434A11.937 11.937 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.817 0-3.53-.478-5.014-1.315l-.359-.212-3.474.851.882-3.374-.232-.37A9.957 9.957 0 012 12C2 6.486 6.486 2 12 2s10 4.486 10 10-4.486 10-10 10z"/>
-        </svg>
-        Chamar no WhatsApp
-      </a>
-      <div class="wa-hint">Respondemos em até 2h durante o funcionamento</div>
-    </div>
-  </div>
-</section>
-
-<!-- FOOTER -->
-<!-- FOOTER -->
-<footer>
-  <div class="footer-left" style="display: flex; align-items: center; gap: 2rem;">
-    <div class="footer-logo">
-      <img src="./img/logo.jpg" alt="Black MuayThai Gym" style="height:30px;width:auto;display:block;">
     </div>
     
-    <!-- LINK DO INSTAGRAM -->
-    <div class="footer-social">
-      <a href="https://instagram.com/black_muaythaigym" target="_blank" rel="noopener" aria-label="Instagram da Academia">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
-          <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
-        </svg>
-      </a>
+    <!-- Sem lutador central -->
+    
+    <div class="hero-overlay-text">
+      <h1 class="glitch" data-text="FIGHT">FIGHT</h1>
     </div>
-  </div>
+  </header>
 
-  <p>© 2026 Black MuayThai Gym · Todos os direitos reservados</p>
-  <p>Dracena — SP</p>
-</footer>
-<script src="main.js"></script>
+  <!-- BENTO GRID SECTION -->
+  <section id="bento" class="bento-section">
+    <div class="bento-container">
+      
+      <!-- Box 1: Manifesto (Large) -->
+      <div class="bento-box box-manifesto reveal">
+        <div class="box-tag">01 // MANIFESTO</div>
+        <h2>NÃO É SÓ<br>BATER SACO.<br>É CONSTRUIR<br><span class="green">CARÁTER.</span></h2>
+        <p>Mais que um esporte. Uma filosofia de vida focada em disciplina, respeito e superação. Aqui não tem treino fofo.</p>
+      </div>
+
+      <!-- Box 2: Horarios -->
+      <div class="bento-box box-schedule reveal delay-1">
+        <div class="box-tag">02 // HORÁRIOS</div>
+        <div class="schedule-list">
+          <div class="s-row"><span>SEG, TER, QUI</span><span>19:10 - 20:30</span></div>
+          <div class="s-row green"><span>PARTICULAR</span><span>Flexível</span></div>
+        </div>
+      </div>
+
+      <!-- Box 3: Imagem/Vibe -->
+      <div class="bento-box box-image reveal delay-2">
+        <!-- Imagem inteira (Com fundo escuro e cor no equipamento) -->
+        <img src="img/Color Splash.jpg" alt="Vibe do treino">
+        <div class="image-overlay">NO PAIN NO GAIN</div>
+      </div>
+
+      <!-- Box 4: Professores -->
+      <div class="bento-box box-coaches reveal">
+        <div class="box-tag">03 // MESTRES</div>
+        <div class="coaches-wrapper">
+          <div class="coach">
+            <h3>JEAN</h3>
+            <span>Professor</span>
+          </div>
+          <div class="coach">
+            <h3>TAYNAN</h3>
+            <span>Professor</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Box 5: Endereço -->
+      <div class="bento-box box-location reveal delay-1">
+        <div class="box-tag">04 // QG</div>
+        <p>Dracena, SP</p>
+        <a href="https://wa.me/5518999999999" class="btn-link">Agendar visita ↗</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PLANS SECTION -->
+  <section id="plans" class="plans-section">
+    <div class="section-title reveal">
+      <h2>ESCOLHA SEU COMBATE</h2>
+    </div>
+    
+    <div class="plans-grid">
+      <!-- Plan 1 -->
+      <div class="plan-card reveal">
+        <div class="plan-header">
+          <h3>COLETIVO</h3>
+          <div class="price">R$<span>145</span><small>/mês</small></div>
+        </div>
+        <ul class="plan-features">
+          <li>Seg, Ter, Qui (19:10 - 20:30)</li>
+          <li>Foco em técnica e cardio</li>
+        </ul>
+        <a href="https://wa.me/5518999999999" class="btn-plan">Assinar Coletivo</a>
+      </div>
+
+      <!-- Plan 2: PERSONAL ACCORDION -->
+      <div class="plan-card highlight reveal delay-1 plan-accordion">
+        <div class="plan-header" style="margin-bottom: 0;">
+          <h3>AULAS PARTICULARES</h3>
+        </div>
+        
+        <div class="accordion-list">
+          <!-- 1x -->
+          <div class="accordion-item">
+            <button class="accordion-trigger" type="button" aria-expanded="false">
+              <span class="acc-title">1X POR SEMANA</span>
+              <span class="acc-meta">
+                <span class="acc-price">R$ 230 <small>/mês</small></span>
+                <span class="acc-icon">+</span>
+              </span>
+            </button>
+            <div class="accordion-content">
+              <div class="acc-inner">
+                <p>4 aulas mensais. Ideal para quem tem agenda restrita e busca refinar técnica.</p>
+                <div class="acc-discounts">
+                  <span>Tri: R$ 676,20</span>
+                  <span class="sep">|</span>
+                  <span>Sem: R$ 1.311,00</span>
+                  <span class="sep">|</span>
+                  <span class="text-green">Ano: R$ 2.484,00</span>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <!-- 2x -->
+          <div class="accordion-item">
+            <button class="accordion-trigger" type="button" aria-expanded="false">
+              <span class="acc-title">2X POR SEMANA</span>
+              <span class="acc-meta">
+                <span class="acc-price">R$ 370 <small>/mês</small></span>
+                <span class="acc-icon">+</span>
+              </span>
+            </button>
+            <div class="accordion-content">
+              <div class="acc-inner">
+                <p>8 aulas mensais. Evolução consistente e resultado visível.</p>
+                <div class="acc-discounts">
+                  <span>Tri: R$ 1.087,80</span>
+                  <span class="sep">|</span>
+                  <span>Sem: R$ 2.109,00</span>
+                  <span class="sep">|</span>
+                  <span class="text-green">Ano: R$ 3.996,00</span>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <!-- 3x -->
+          <div class="accordion-item active">
+            <button class="accordion-trigger" type="button" aria-expanded="true">
+              <span class="acc-title">3X POR SEMANA <span class="tag-pop">POPULAR</span></span>
+              <span class="acc-meta">
+                <span class="acc-price">R$ 490 <small>/mês</small></span>
+                <span class="acc-icon">-</span>
+              </span>
+            </button>
+            <div class="accordion-content">
+              <div class="acc-inner">
+                <p>12 aulas mensais. Aceleração técnica brutal e condicionamento extremo.</p>
+                <div class="acc-discounts">
+                  <span>Tri: R$ 1.440,60</span>
+                  <span class="sep">|</span>
+                  <span>Sem: R$ 2.793,00</span>
+                  <span class="sep">|</span>
+                  <span class="text-green">Ano: R$ 5.292,00</span>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <!-- 4x -->
+          <div class="accordion-item">
+            <button class="accordion-trigger" type="button" aria-expanded="false">
+              <span class="acc-title">4X POR SEMANA</span>
+              <span class="acc-meta">
+                <span class="acc-price">R$ 610 <small>/mês</small></span>
+                <span class="acc-icon">+</span>
+              </span>
+            </button>
+            <div class="accordion-content">
+              <div class="acc-inner">
+                <p>16 aulas mensais. Alta performance para quem vive o esporte.</p>
+                <div class="acc-discounts">
+                  <span>Tri: R$ 1.793,40</span>
+                  <span class="sep">|</span>
+                  <span>Sem: R$ 3.477,00</span>
+                  <span class="sep">|</span>
+                  <span class="text-green">Ano: R$ 6.588,00</span>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <!-- 5x -->
+          <div class="accordion-item">
+            <button class="accordion-trigger" type="button" aria-expanded="false">
+              <span class="acc-title">5X POR SEMANA</span>
+              <span class="acc-meta">
+                <span class="acc-price">R$ 730 <small>/mês</small></span>
+                <span class="acc-icon">+</span>
+              </span>
+            </button>
+            <div class="accordion-content">
+              <div class="acc-inner">
+                <p>20 aulas mensais. O pacote definitivo de treinamento diário.</p>
+                <div class="acc-discounts">
+                  <span>Tri: R$ 2.146,20</span>
+                  <span class="sep">|</span>
+                  <span>Sem: R$ 4.161,00</span>
+                  <span class="sep">|</span>
+                  <span class="text-green">Ano: R$ 7.884,00</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MASSIVE FOOTER -->
+  <footer class="footer-massive">
+    <div class="footer-cta reveal">
+      <h2>PRONTO PARA O RINGUE?</h2>
+      <a href="https://wa.me/5518999999999" class="btn-huge magnetic" target="_blank">FALE COM O MESTRE</a>
+    </div>
+    <div class="footer-bottom">
+      <div class="brand">BLACK MUAYTHAI GYM</div>
+      <p>© 2026. Feito para destruição e glória.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+  <!-- GSAP for advanced interactions -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  
+  <script src="main.js"></script>
 </body>
 </html>
