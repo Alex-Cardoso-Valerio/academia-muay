@@ -103,6 +103,24 @@ document.querySelectorAll('.reveal').forEach(el => {
   observer.observe(el);
 });
 
+// Ativação automática da imagem "No Pain No Gain" ao rolar perto dela (mobile e desktop)
+const boxImage = document.querySelector('.box-image');
+if (boxImage) {
+  const imageObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        boxImage.classList.add('is-active');
+      } else {
+        boxImage.classList.remove('is-active');
+      }
+    });
+  }, {
+    threshold: 0.25,
+    rootMargin: '0px 0px -5% 0px'
+  });
+  imageObserver.observe(boxImage);
+}
+
 // Smooth scroll para links da navbar (Pill Nav)
 document.querySelectorAll('a[data-scroll], .pill-links a').forEach(anchor => {
   anchor.addEventListener('click', function(e) {
